@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+
+#header{
+    background: url(./images/Netflix-Background.jpg) center center/cover no-repeat;
+}
+
+#header::after{
+    content: '';
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    box-shadow: inset 50px 100px 250px black, inset -50px -100px 250px black;
+}
+
+#header div{
+    z-index: 2;
+}
+
+.container{
+    max-width: 1298px;
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+#main{
+    height: 80vh;
+}
+
+#footer{
+    background: url(./images/img2.jpg) center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
